@@ -816,26 +816,43 @@ button{font:inherit;color:inherit}
 
   /* ---------- experience ---------- */
   var XP_TABS = [
-   { id: 'work', name: 'Work', items: [
-  { role: 'Accountability Coach', org: 'Boss Level 100', place: '', from: 'Jul 2026', to: 'Present', now: true, pts: [
-    'Help members transform ambitious goals into daily execution through structured check-ins, action plans, and continuous guidance.',
-    'Monitor progress, identify personal bottlenecks, and keep members aligned with their targets using consistent tracking and tailored support.'
-  ] },
-  { role: 'Virtual Assistant', org: 'Doneverse', place: 'Davao', from: 'Aug 2024', to: 'Present', now: true, pts: [
-    'Manage Zoho One CRM operations.',
-    'Resolve 500–800 support tickets daily.',
-    'Provide virtual assistance through social media management, SEO support, email marketing and content creation.',
-    'Handle HR administrative tasks, including onboarding and confidential record management.' ] },
-  { role: 'Self-employed', org: 'HANK Cycle', place: 'Commonwealth, Quezon City', from: 'Aug 2020', to: 'Present', now: true, pts: [
-    'Oversee daily business operations.',
-    'Manage customer concerns and coordinate with employees.',
-    'Prepare quotations and maintain bicycle and motorcycle parts records.',
-    'Support cycling events and activities.' ] },
-  { role: 'Milktea Barista', org: 'Divercitea', place: 'Banaba, San Mateo', from: 'Jan 2019', to: 'Jan 2022', pts: [
-    'Prepared and served beverages with quality customer service.',
-    'Maintained cleanliness and sanitation standards.',
-    'Helped customers with menu recommendations.' ] }
-] },
+  { id: 'work', name: 'Work', items: [
+      { role: 'Virtual Assistant', org: 'Doneverse', place: 'Davao', from: 'Aug 2024', to: 'Present', now: true, pts: [
+        'Manage Zoho One CRM operations.',
+        'Resolve 500–800 support tickets daily.',
+        'Provide virtual assistance through social media management, SEO support, email marketing and content creation.',
+        'Handle HR administrative tasks, including onboarding and confidential record management.' ] },
+      { role: 'Self-employed', org: 'HANK Cycle', place: 'Commonwealth, Quezon City', from: 'Aug 2020', to: 'Present', now: true, pts: [
+        'Oversee daily business operations.',
+        'Manage customer concerns and coordinate with employees.',
+        'Prepare quotations and maintain bicycle and motorcycle parts records.',
+        'Support cycling events and activities.' ] },
+      { role: 'Milktea Barista', org: 'Divercitea', place: 'Banaba, San Mateo', from: 'Jan 2019', to: 'Jan 2022', pts: [
+        'Prepared and served beverages with quality customer service.',
+        'Maintained cleanliness and sanitation standards.',
+        'Helped customers with menu recommendations.' ] }
+    ] },
+    { id: 'intern', name: 'Internships', items: [
+      { role: 'Intern', org: 'Sol Psychological Services', place: 'Nasugbu, Batangas', from: 'Jul 2022', pts: [
+        'Assisted in community mental health programs.',
+        'Conducted client assessments and mental status examinations.',
+        'Referred clients to consulting psychologists when necessary.' ] },
+      { role: 'Intern', org: 'Pierre & Paul Solutions Inc.', place: 'Shaw Boulevard, Mandaluyong', from: 'Jun 2022', to: 'Jul 2022', pts: [
+        'Supported recruitment and HR operations through candidate pre-screening and follow-ups.',
+        'Assisted with onboarding and offboarding processes.',
+        'Managed employee documentation.' ] },
+      { role: 'Intern', org: 'Nuestra Señora de Aranazu Parochial School', place: 'San Mateo, Rizal', from: 'Feb 2019', to: 'Mar 2019', pts: [
+        'Provided administrative support to the guidance office.',
+        'Assisted with student orientations and enrollment inquiries.',
+        'Organized records and documents.' ] }
+    ] },
+    { id: 'affil', name: 'Affiliation', items: [
+      { role: 'Social Media Manager', org: 'Keeping Hope Alive-Montalban', place: 'NGO', from: '2020', to: '2021', pts: [
+        'Handled all social media platforms for postings and boostings.',
+        'Kept all donations transparent to the media.',
+        'Reminded co-members to boost posts on every platform for more engagement.' ] }
+    ] }
+  ];
   var xpTabs = $('#xpTabs'), xpList = $('#xpList');
   xpTabs.innerHTML = XP_TABS.map(function (t) {
     return '<button role="tab" type="button" id="xt-' + t.id + '" aria-controls="xpList" aria-selected="false"><span>' + t.name + '</span><span class="count">' + t.items.length + '</span></button>';
